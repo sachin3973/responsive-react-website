@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --main-white: #fff;
+  --glass-gray: hsla(0, 45%, 98%, 0.05);
+  --img-back: rgba(0, 0, 0, 0.543), rgba(0, 0, 0, 0.502);
+  --glass-white: rgba(106, 101, 101, 0.214), rgba(112, 107, 112, 0.344);
+  --glass-secondary: hsla(252, 50%, 10%, 0.377), hsla(216, 69%, 53%, 0.527);
+  --glass-before: rgba(16, 15, 15, 0.146);
+  --p-status: #888787;
+  --blur: hsla(0, 0%, 100%, 0.03);
+  --blur-small: hsla(0, 3%, 45%, 0.158);
+  --secondary-cards: hsla(0, 5%, 66%, 0.16);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img,
+picture {
+  max-width: 100%;
 }
